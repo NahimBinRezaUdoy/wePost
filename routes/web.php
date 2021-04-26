@@ -22,7 +22,7 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
