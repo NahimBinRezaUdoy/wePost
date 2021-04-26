@@ -32,7 +32,10 @@
                 </li>
 
                 <li>
-                    <a href="" class="p-3">Logout</a>
+                    <form action="{{ route('logout') }}" method="POST" class="inline p-2">
+                        @csrf
+                        <button class="" type="submit">Logout</button>
+                    </form>
                 </li>
             @endauth
 
