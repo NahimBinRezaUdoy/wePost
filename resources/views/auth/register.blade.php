@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex justify-center">
-        <div class="w-8/12 bg-white p-6 rounded-lg">
+        <div class="w-6/12 bg-white p-6 rounded-lg">
 
             <form action="{{ route('register') }}" method="POST">
                 @csrf
@@ -73,7 +73,7 @@
 
                 <div>
                     <button type="submit"
-                        class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Submit</button>
+                        class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Register</button>
                 </div>
 
             </form>
